@@ -133,6 +133,7 @@ def discover_streams(config):
             build_account_visitor_metadata(mdata, schema,
                                            custom_visitor_fields)
 
+        # @TODO - why is build_account_visitor_metadata() used above and we also have the metadata_accounts/metadata_visitors below?
         if s.name == 'metadata_accounts':
             build_metadata_metadata(mdata, schema, custom_account_fields)
 
